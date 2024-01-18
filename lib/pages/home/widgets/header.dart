@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 class HeaderSection extends StatelessWidget {
   const HeaderSection({super.key});
 
-  get child => null;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 100.0,
       padding: EdgeInsets.only(
           top: MediaQuery.of(context).padding.top, left: 15, right: 15),
       child: const Stack(
@@ -21,10 +21,10 @@ class HeaderSection extends StatelessWidget {
                 Text(
                   'Phone Contacts',
                   style: TextStyle(
-                    fontFamily: 'Rubik',
+                    fontFamily: 'R.font.rubik',
                     color: Color(0xFF353350),
                     fontSize: 24,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                   ),
                 ),
               ],
@@ -33,9 +33,9 @@ class HeaderSection extends StatelessWidget {
           Align(
             alignment: AlignmentDirectional(-1, 0),
             child: Icon(
-              Icons.chevron_left_outlined,
+              Icons.arrow_back_ios_rounded,
               color: Color(0xFF353350),
-              size: 32,
+              size: 30,
             ),
           ),
         ],

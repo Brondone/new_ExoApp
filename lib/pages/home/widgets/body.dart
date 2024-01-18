@@ -39,14 +39,14 @@ class BodySection extends StatelessWidget {
                     'Darron Kulikowski',
                     style: TextStyle(
                       fontFamily: 'Rubik',
-                      fontSize: 18,
+                      fontSize: 16,
                       fontWeight: FontWeight.w500,
                     ),
                   ),
                 ],
               ),
               Container(
-                width: 97,
+                width: 90,
                 height: 32,
                 decoration: BoxDecoration(
                   color: Colors.white,

@@ -6,9 +6,8 @@ class SearchSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 100.0,
-        padding:
-            const EdgeInsetsDirectional.symmetric(horizontal: 24, vertical: 24),
+
+        padding: EdgeInsetsDirectional.fromSTEB(24,0, 24, 24),
         child: Stack(children: [
           TextField(
             decoration: InputDecoration(
@@ -18,7 +17,7 @@ class SearchSection extends StatelessWidget {
                 borderRadius: BorderRadius.circular(16),
               ),
               hintText: 'Search name and phone number',
-              contentPadding: EdgeInsets.all(18),
+              contentPadding: EdgeInsets.all(15),
               hintStyle: const TextStyle(
                 fontFamily: 'Rubik',
                 fontSize: 16,
@@ -29,7 +28,7 @@ class SearchSection extends StatelessWidget {
                 widthFactor: 1.0,
                 heightFactor: 1.0,
                 child: Icon(
-                  Icons.close_sharp,
+                  Icons.close_rounded,
                   size: 20,
                   color: Color(0xFF353350),
                 ),
