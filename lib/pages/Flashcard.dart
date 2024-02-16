@@ -6,6 +6,7 @@ class FlashcardPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
@@ -39,6 +40,7 @@ class FlashcardPage extends StatelessWidget {
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  //Rectangle (Quiz name)..
                   Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(24, 10, 24, 30),
@@ -383,400 +385,594 @@ class FlashcardPage extends StatelessWidget {
                           ),
                         ),
                         Padding(
-                          padding:
-                              const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 5, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 28,
-                                      height: 28,
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFF9B90EA),
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Row(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
+                              0, 05, 0, 10),
+                          child: Wrap(
+                            runSpacing: 15,
+                            children: <Widget>[
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('1',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
                                         mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Text('1',
+                                          Text(
+                                              '....... do you get to school? by bus?',
                                               style: GoogleFonts.rubik(
                                                 textStyle: const TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.white,
+                                                  color: Color(0xFF020024),
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                               )),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              10, 0, 0, 0),
-                                      child: Container(
-                                        width: 250,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                                '....... do you get to school? by bus?',
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('Which',
                                                 style: GoogleFonts.rubik(
                                                   textStyle: const TextStyle(
                                                     fontSize: 16,
-                                                    color: Color(0xFF020024),
+                                                    color: Color(0xFF858494),
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                                 )),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 5, 0, 0),
-                                              child: Text('Which',
-                                                  style: GoogleFonts.rubik(
-                                                    textStyle: const TextStyle(
-                                                      fontSize: 16,
-                                                      color: Color(0xFF858494),
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                                  )),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.cancel_outlined,
-                                      color: Color(0xFFF75555),
-                                      size: 24,
-                                    ),
-                                  ],
-                                ),
+                                  ),
+                                  const Icon(
+                                    Icons.cancel_outlined,
+                                    color: Color(0xFFF75555),
+                                    size: 24,
+                                  ),
+                                ],
                               ),
-                              Padding(
-                                padding: const EdgeInsetsDirectional.fromSTEB(
-                                    0, 5, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 28,
-                                      height: 28,
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFF9B90EA),
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Row(
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('2',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
                                         mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Text('2',
+                                          Text('This is a book? True or False?',
                                               style: GoogleFonts.rubik(
                                                 textStyle: const TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.white,
+                                                  color: Color(0xFF020024),
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                               )),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Container(
-                                        width: 250,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                                'This is a book? True or False?',
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('This ,a',
                                                 style: GoogleFonts.rubik(
                                                   textStyle: const TextStyle(
                                                     fontSize: 16,
-                                                    color: Color(0xFF020024),
+                                                    color: Color(0xFF858494),
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                                 )),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 5, 0, 0),
-                                              child: Text('This ,a',
-                                                  style: GoogleFonts.rubik(
-                                                    textStyle: const TextStyle(
-                                                      fontSize: 16,
-                                                      color: Color(0xFF858494),
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                                  )),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.check_circle_outline_rounded,
-                                      color: Color(0xFF12D18E),
-                                      size: 24,
-                                    )
-                                  ],
-                                ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
                               ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 5, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 28,
-                                      height: 28,
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFF9B90EA),
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Row(
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('3',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
                                         mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Text('3',
+                                          Text(
+                                              'Order the following simple words',
                                               style: GoogleFonts.rubik(
                                                 textStyle: const TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.white,
+                                                  color: Color(0xFF020024),
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                               )),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Container(
-                                        width: 250,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                                'Order the following simple words',
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('True',
                                                 style: GoogleFonts.rubik(
                                                   textStyle: const TextStyle(
                                                     fontSize: 16,
-                                                    color: Color(0xFF020024),
+                                                    color: Color(0xFF858494),
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                                 )),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 5, 0, 0),
-                                              child: Text('True',
-                                                  style: GoogleFonts.rubik(
-                                                    textStyle: const TextStyle(
-                                                      fontSize: 16,
-                                                      color: Color(0xFF858494),
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                                  )),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.check_circle_outline_rounded,
-                                      color: Color(0xFF12D18E),
-                                      size: 24,
-                                    )
-                                  ],
-                                ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
                               ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 5, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 28,
-                                      height: 28,
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFF9B90EA),
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Row(
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('4',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
                                         mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Text('4',
+                                          Text(
+                                              'What are the objects in the picture above?',
                                               style: GoogleFonts.rubik(
                                                 textStyle: const TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.white,
+                                                  color: Color(0xFF020024),
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                               )),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
-                                          10, 0, 0, 0),
-                                      child: Container(
-                                        width: 250,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                                'What are the objects in the picture above?',
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text(
+                                                'Book, Ruler, laptop, Scissors',
                                                 style: GoogleFonts.rubik(
                                                   textStyle: const TextStyle(
                                                     fontSize: 16,
-                                                    color: Color(0xFF020024),
+                                                    color: Color(0xFF858494),
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                                 )),
-                                            Padding(
-                                              padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 5, 0, 0),
-                                              child: Text(
-                                                  'Book, Ruler, laptop, Scissors',
-                                                  style: GoogleFonts.rubik(
-                                                    textStyle: const TextStyle(
-                                                      fontSize: 16,
-                                                      color: Color(0xFF858494),
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                                  )),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.check_circle_outline_rounded,
-                                      color: Color(0xFF12D18E),
-                                      size: 24,
-                                    )
-                                  ],
-                                ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
                               ),
-                              Padding(
-                                padding:
-                                    EdgeInsetsDirectional.fromSTEB(0, 5, 0, 5),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 28,
-                                      height: 28,
-                                      decoration: const BoxDecoration(
-                                        color: Color(0xFF9B90EA),
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Row(
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('5',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
                                         mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
                                         children: [
-                                          Text('5',
+                                          Text(
+                                              'How many balloons was on the above image?',
                                               style: GoogleFonts.rubik(
                                                 textStyle: const TextStyle(
                                                   fontSize: 16,
-                                                  color: Colors.white,
+                                                  color: Color(0xFF020024),
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                               )),
-                                        ],
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding:
-                                          const EdgeInsetsDirectional.fromSTEB(
-                                              10, 0, 0, 0),
-                                      child: Container(
-                                        width: 240,
-                                        decoration: BoxDecoration(),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.max,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                                'A for Apple, B for Ball, C for Cat.',
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('Three',
                                                 style: GoogleFonts.rubik(
                                                   textStyle: const TextStyle(
                                                     fontSize: 16,
-                                                    color: Color(0xFF020024),
+                                                    color: Color(0xFF858494),
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                                 )),
-                                            Padding(
-                                              padding:
-                                                  const EdgeInsetsDirectional
-                                                      .fromSTEB(0, 5, 0, 0),
-                                              child: Text(
-                                                  'voy · chekshez · nee',
-                                                  style: GoogleFonts.rubik(
-                                                    textStyle: const TextStyle(
-                                                      fontSize: 16,
-                                                      color: Color(0xFF858494),
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                    ),
-                                                  )),
-                                            ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.volume_up_outlined,
-                                      color: Color(0xFF6A5AE0),
-                                      size: 24,
-                                    )
-                                  ],
-                                ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('7',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              'What does the illustration above describe?',
+                                              style: GoogleFonts.rubik(
+                                                textStyle: const TextStyle(
+                                                  fontSize: 16,
+                                                  color: Color(0xFF020024),
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                              )),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('Saving',
+                                                style: GoogleFonts.rubik(
+                                                  textStyle: const TextStyle(
+                                                    fontSize: 16,
+                                                    color: Color(0xFF858494),
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                )),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('8',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        10, 0, 0, 0),
+                                    child: Container(
+                                      width: 250,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text('What are your hobbies?',
+                                              style: GoogleFonts.rubik(
+                                                textStyle: const TextStyle(
+                                                  fontSize: 16,
+                                                  color: Color(0xFF020024),
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                              )),
+                                          Padding(
+                                            padding:
+                                                EdgeInsetsDirectional.fromSTEB(
+                                                    0, 5, 0, 0),
+                                            child: Text('Reading',
+                                                style: GoogleFonts.rubik(
+                                                  textStyle: const TextStyle(
+                                                    fontSize: 16,
+                                                    color: Color(0xFF858494),
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                )),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.check_circle_outline_rounded,
+                                    color: Color(0xFF12D18E),
+                                    size: 24,
+                                  )
+                                ],
+                              ),
+                              Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    width: 28,
+                                    height: 28,
+                                    decoration: const BoxDecoration(
+                                      color: Color(0xFF9B90EA),
+                                      shape: BoxShape.circle,
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.max,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: [
+                                        Text('6',
+                                            style: GoogleFonts.rubik(
+                                              textStyle: const TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            )),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsetsDirectional.fromSTEB(
+                                            10, 0, 0, 0),
+                                    child: Container(
+                                      width: 240,
+                                      decoration: BoxDecoration(),
+                                      child: Column(
+                                        mainAxisSize: MainAxisSize.max,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                              'A for Apple, B for Ball, C for Cat.',
+                                              style: GoogleFonts.rubik(
+                                                textStyle: const TextStyle(
+                                                  fontSize: 16,
+                                                  color: Color(0xFF020024),
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                              )),
+                                          Padding(
+                                            padding: const EdgeInsetsDirectional
+                                                .fromSTEB(0, 5, 0, 0),
+                                            child: Text('voy · chekshez · nee',
+                                                style: GoogleFonts.rubik(
+                                                  textStyle: const TextStyle(
+                                                    fontSize: 16,
+                                                    color: Color(0xFF858494),
+                                                    fontWeight: FontWeight.w500,
+                                                  ),
+                                                )),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                  const Icon(
+                                    Icons.volume_up_outlined,
+                                    color: Color(0xFF6A5AE0),
+                                    size: 24,
+                                  )
+                                ],
                               ),
                             ],
                           ),
@@ -784,10 +980,11 @@ class FlashcardPage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  //List of answers
                   Container(
                       width: double.infinity,
                       height: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
@@ -806,7 +1003,7 @@ class FlashcardPage extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(24, 0, 10, 0),
                               child: Container(
-                                width: 100,
+                                width: size.width,
                                 height: 52,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
@@ -846,7 +1043,7 @@ class FlashcardPage extends StatelessWidget {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(10, 0, 24, 0),
                               child: Container(
-                                width: 100,
+                                width: size.width,
                                 height: 52,
                                 decoration: BoxDecoration(
                                   color: Color(0xFF6A5AE0),

@@ -8,92 +8,102 @@ class bodyQuizcompleted extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(24, 30, 24, 0),
+      padding: EdgeInsetsDirectional.symmetric(horizontal: 24),
       child: Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          //group of circles..
-          Align(
-            alignment: AlignmentDirectional(0, 0),
-            child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 30),
-              child: Container(
-                width: 166,
-                height: 166,
-                decoration: BoxDecoration(
-                  color: Color(0x43D1CCF5),
-                  shape: BoxShape.circle,
-                ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 135,
-                      height: 135,
-                      decoration: const BoxDecoration(
-                        color: Color(0xF6BAB3F1),
-                        shape: BoxShape.circle,
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 120,
-                            height: 120,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              shape: BoxShape.circle,
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.max,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 3),
-                                    child: Text(
-                                      'Your Score',
-                                      style: GoogleFonts.rubik(
-                                        textStyle: const TextStyle(
-                                          fontSize: 18,
-                                          color: Color(0xFF6A5AE0),
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
-                                    )),
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      0, 3, 0, 0),
-                                  child: Text(
-                                    '150pt',
-                                    style: GoogleFonts.rubik(
-                                      textStyle: const TextStyle(
-                                        fontSize: 24,
-                                        color: Color(0xFF6A5AE0),
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+          Container(
+            padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Icon(
+                  Icons.close_rounded,
+                  color: Colors.white,
+                  size: 28,
+                )
+              ],
             ),
           ),
+          SizedBox(height: size.height * 0.04),
+          //group of circles..
+          Container(
+            width: 166,
+            height: 166,
+            decoration: BoxDecoration(
+              color: Color(0x43D1CCF5),
+              shape: BoxShape.circle,
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 135,
+                  height: 135,
+                  decoration: const BoxDecoration(
+                    color: Color(0xF6BAB3F1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 120,
+                        height: 120,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(0, 0, 0, 3),
+                                child: Text(
+                                  'Your Score',
+                                  style: GoogleFonts.rubik(
+                                    textStyle: const TextStyle(
+                                      fontSize: 18,
+                                      color: Color(0xFF6A5AE0),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                )),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 3, 0, 0),
+                              child: Text(
+                                '150pt',
+                                style: GoogleFonts.rubik(
+                                  textStyle: const TextStyle(
+                                    fontSize: 24,
+                                    color: Color(0xFF6A5AE0),
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: size.height * 0.03),
           //rectangle..
           Container(
             width: double.infinity,
-            height: 209,
+            height: size.height * 0.30,
             decoration: BoxDecoration(
               color: Colors.white,
               boxShadow: const [
@@ -114,9 +124,9 @@ class bodyQuizcompleted extends StatelessWidget {
                   Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        decoration: BoxDecoration(),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -131,7 +141,7 @@ class bodyQuizcompleted extends StatelessWidget {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0, -1),
+                              alignment: AlignmentDirectional(0, 0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -330,16 +340,17 @@ class bodyQuizcompleted extends StatelessWidget {
             ),
           ),
           //Layouts..
+          SizedBox(height: size.height * 0.03),
           Container(
             width: double.infinity,
             decoration: BoxDecoration(),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+              padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -473,7 +484,7 @@ class bodyQuizcompleted extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(30, 20, 30, 0),
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 20),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,

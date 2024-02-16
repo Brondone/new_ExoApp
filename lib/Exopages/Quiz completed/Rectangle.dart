@@ -6,9 +6,10 @@ class RectangleSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
         width: double.infinity,
-        height: 410,
+        height: size.height * 0.55,
         decoration: const BoxDecoration(
           color: Color(0xFF9B90EA),
           borderRadius: BorderRadius.only(
@@ -27,15 +28,22 @@ class RectangleSection extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  width: 120,
-                  height: 120,
-                  decoration: const BoxDecoration(
-                    color: Color(0x3EFFFFFF),
-                    shape: BoxShape.circle,
+                  width: 125,
+                  height: 125,
+                  child: Align(
+                    alignment: AlignmentDirectional(-10, -11),
+                    child: Container(
+                      width: 120,
+                      height: 120,
+                      decoration: const BoxDecoration(
+                        color: Color(0x3EFFFFFF),
+                        shape: BoxShape.circle,
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(30, 0, 20, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 20, 0),
                   child: Container(
                     width: 90,
                     height: 45,
