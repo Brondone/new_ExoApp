@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:new_app/Exopages/Quiz%20completed/Error_state%20management/Error_enter_title.dart';
+import 'package:new_app/Exopages/Quiz%20completed/friends.dart';
+import 'package:new_app/Exopages/Quiz%20completed/home/home.dart';
+import 'package:new_app/Exopages/Quiz%20completed/soushome.dart';
+import 'package:new_app/pages/Final_scoreboard/Wedget/Background_image.dart';
+import 'package:new_app/pages/Final_scoreboard/Body_Final_scoreboard.dart';
 import 'package:new_app/pages/Flashcard.dart';
 import 'package:new_app/Exopages/Quiz%20completed/bodyQuizcompleted.dart';
 
@@ -15,9 +20,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'ExoApp',
+      title: 'LivQuiz',
       debugShowCheckedModeBanner: false,
-      home: FlashcardPage(),
+      home: Final_scoreboardPage(),
     );
   }
 }
