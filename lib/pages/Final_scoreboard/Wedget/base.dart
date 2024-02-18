@@ -34,7 +34,7 @@ class baseSection extends StatelessWidget {
                 child: Container(
                   width: double.infinity,
                   height: double.infinity,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0xFFF0EFFC),
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(0),
@@ -120,7 +120,7 @@ class baseSection extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Padding(
+                            const Padding(
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 15, 0, 15),
                               child: Column(

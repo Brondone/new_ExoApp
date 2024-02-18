@@ -11,7 +11,7 @@ class SoushomePage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           automaticallyImplyLeading: true,
-          leading: Padding(
+          leading: const Padding(
             padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 0),
             child: Icon(
               Icons.arrow_back_ios_new_rounded,
@@ -25,7 +25,7 @@ class SoushomePage extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsetsDirectional.fromSTEB(0, 0, 5, 0),
                     child: Icon(
                       Icons.star_rounded,
@@ -44,7 +44,8 @@ class SoushomePage extends StatelessWidget {
             ),
           ],
         ),
-        body: Padding(
+        body: SingleChildScrollView(
+            child: Padding(
           padding: const EdgeInsetsDirectional.fromSTEB(24, 10, 24, 0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
@@ -361,6 +362,6 @@ class SoushomePage extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        )));
   }
 }
