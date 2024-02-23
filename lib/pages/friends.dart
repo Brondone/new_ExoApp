@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class friendsPage extends StatelessWidget {
-  const friendsPage({super.key});
+//Note by Nurullah: Never use first latter of a class name with small latter. it will be Capital
+class FriendsPage extends StatelessWidget {
+  const FriendsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

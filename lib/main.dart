@@ -7,6 +7,7 @@ import 'package:new_app/pages/Preminum_collections/SousCollection.dart';
 import 'package:new_app/pages/Top%20authors/Profile.dart';
 import 'package:new_app/pages/Top%20authors/Widget/Share.dart';
 import 'package:new_app/pages/Top%20authors/Widget/ToggleButton.dart';
+import 'package:new_app/pages/friends.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'LivQuiz',
       debugShowCheckedModeBanner: false,
-      home: free_course_option(),
+      home: FriendsPage(),
     );
   }
 }
