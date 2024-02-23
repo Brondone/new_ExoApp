@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
                   Container(
                     width: 140,
                     height: double.infinity,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(12),
                         bottomRight: Radius.circular(0),
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                     child: Stack(
                       children: [
                         ClipRRect(
-                          borderRadius: BorderRadius.only(
+                          borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(12),
                             bottomRight: Radius.circular(0),
                             topLeft: Radius.circular(12),
