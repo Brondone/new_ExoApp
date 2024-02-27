@@ -38,6 +38,7 @@ dependencies:
   readmore: ^2.2.0
   google_fonts: ^6.1.0
   flutter_svg: ^2.0.9
+  pigment: ^1.0.4
 
   
 

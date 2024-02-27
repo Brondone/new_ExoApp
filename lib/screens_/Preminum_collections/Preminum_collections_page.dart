@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:new_app/pages/Preminum_collections/widget/Re-Collection.dart';
+import 'package:new_app/screens_/preminum_collections/widget/Re-Collection.dart';
 
 class Premium_CollectionsPage extends StatelessWidget {
   const Premium_CollectionsPage({super.key});

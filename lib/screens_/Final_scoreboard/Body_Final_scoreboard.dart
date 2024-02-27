@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:new_app/pages/Final_scoreboard/Wedget/Background_image.dart';
-import 'package:new_app/pages/Final_scoreboard/Wedget/base.dart';
-import 'package:new_app/pages/Final_scoreboard/Wedget/header.dart';
-import 'package:new_app/pages/Final_scoreboard/Wedget/podium.dart';
+import 'package:new_app/screens_/final_scoreboard/Wedget/Background_image.dart';
+import 'package:new_app/screens_/final_scoreboard/Wedget/base.dart';
+import 'package:new_app/screens_/final_scoreboard/Wedget/header.dart';
+import 'package:new_app/screens_/final_scoreboard/Wedget/podium.dart';
 
 class Final_scoreboardPage extends StatelessWidget {
   const Final_scoreboardPage({super.key});

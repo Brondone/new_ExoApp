@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:new_app/pages/Preminum_collections/widget/Re-Profile.dart';
-import 'package:new_app/pages/Top%20authors/Widget/QuizList.dart';
+import 'package:new_app/screens_/preminum_collections/widget/Re-Profile.dart';
+import 'package:new_app/screens_/common_widgets/QuizList.dart';
 
 class SousCollectionPage extends StatelessWidget {
   const SousCollectionPage({super.key});
@@ -32,7 +32,7 @@ class SousCollectionPage extends StatelessWidget {
             ),
           ),
           centerTitle: true,
-          actions: [
+          actions: const [
             Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 0, 24, 0),
               child: Icon(

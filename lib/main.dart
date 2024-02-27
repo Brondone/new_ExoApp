@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:new_app/screens_/Group%20My%20Profile/personal%20info%20screen/Personal_info.dart';
+import 'package:new_app/screens_/Group%20My%20Profile/setting%20screen/setting%20page/Setting.dart';
+import 'package:new_app/screens_/Group%20My%20Profile/stats/Stats.dart';
 
-import 'package:new_app/pages/Courses/free_course_option.dart';
-import 'package:new_app/pages/Courses/free_courses.dart';
-import 'package:new_app/pages/Preminum_collections/Preminum_collections_page.dart';
-import 'package:new_app/pages/Preminum_collections/SousCollection.dart';
-import 'package:new_app/pages/Top%20authors/Profile.dart';
-import 'package:new_app/pages/Top%20authors/Widget/Share.dart';
-import 'package:new_app/pages/Top%20authors/Widget/ToggleButton.dart';
+import 'package:new_app/screens_/friends.dart';
+import 'package:new_app/screens_/group%20My%20Profile/setting_popup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'LivQuiz',
       debugShowCheckedModeBanner: false,
-      home: free_course_option(),
+      home: StatsPage(),
     );
   }
 }

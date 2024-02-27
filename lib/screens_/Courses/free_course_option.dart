@@ -180,7 +180,7 @@ class free_course_option extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          width: size.width * 0.5,
+                          width: size.width * 0.55,
                           decoration: BoxDecoration(
                             borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(0),

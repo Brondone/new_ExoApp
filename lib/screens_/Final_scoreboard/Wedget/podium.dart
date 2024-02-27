@@ -35,7 +35,7 @@ class PodiumSection extends StatelessWidget {
                             width: 70,
                             height: size.height * 0.1,
                             clipBehavior: Clip.antiAlias,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                             ),
                             child: Image.asset(

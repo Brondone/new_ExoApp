@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:new_app/pages/Top%20authors/Widget/About.dart';
-import 'package:new_app/pages/Top%20authors/Widget/Collection.dart';
-import 'package:new_app/pages/Top%20authors/Widget/QuizList.dart';
-import 'package:new_app/pages/Top%20authors/Widget/ToggleButton.dart';
+import 'package:new_app/screens_/common_widgets/About.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -510,7 +507,49 @@ class ProfilePage extends StatelessWidget {
                   ],
                 ),
               ),
-              const about_author_Section(),
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 15),
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      '3 Quizzes',
+                      style: GoogleFonts.rubik(
+                        textStyle: const TextStyle(
+                          fontSize: 20,
+                          color: Color(0xFF353350),
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                    Row(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Text(
+                          'Default',
+                          style: GoogleFonts.rubik(
+                            textStyle: const TextStyle(
+                              color: Color(0xFF6A5AE0),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 0),
+                          child: Icon(
+                            Icons.swap_vert_rounded,
+                            color: Color(0xFF6A5AE0),
+                            size: 24,
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              about_author_Section(),
             ],
           ),
         )));
