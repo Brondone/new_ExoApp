@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_app/const/size_config.dart';
 import 'package:new_app/screen/setting_page/settingScreen.dart';
 import 'package:new_app/screen/setting_popup/commons/popup.dart';
 
@@ -12,9 +13,15 @@ class settingPopupPage extends StatelessWidget {
         // background setting page
         const settingPage(),
         // background color
-        Container(
-          decoration: const BoxDecoration(
-            color: Color(0x951C1A1A),
+        SizedBox(height: SizeConfig.screenHeight! * 0.02),
+        GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Container(
+            decoration: const BoxDecoration(
+              color: Color(0x951C1A1A),
+            ),
           ),
         ),
         // popup section

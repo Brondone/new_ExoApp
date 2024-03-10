@@ -15,8 +15,8 @@ class statsPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: PreferredSize(
-          preferredSize: const Size.fromHeight(76),
-          child: SafeArea(child: _appBar()),
+          preferredSize: const Size.fromHeight(70),
+          child: SafeArea(child: _appBar(context)),
         ),
         body: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 24),
@@ -32,16 +32,20 @@ class statsPage extends StatelessWidget {
   }
 }
 
-Widget _appBar() {
+Widget _appBar(context) {
   return AppBar(
     backgroundColor: Colors.white,
     automaticallyImplyLeading: true,
-    leading: const Padding(
-      padding: EdgeInsets.only(left: 10.0),
-      child: Icon(
-        Icons.arrow_back_ios_new_rounded,
-        color: Color(0xFF353350),
-        size: 24,
+    leading: Padding(
+      padding: const EdgeInsets.only(left: 10.0),
+      child: GestureDetector(
+        onTap: () {
+          Navigator.pop(context);
+        },
+        child: const Icon(
+          Icons.arrow_back_ios,
+          color: Colors.black,
+        ),
       ),
     ),
     title: Text(

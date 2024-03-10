@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:new_app/old_screens2/group%20My%20Profile/setting%20screen/setting%20page/wedgets/logout.dart';
 import 'package:new_app/old_screens2/group%20My%20Profile/setting%20screen/setting%20page/wedgets/personal_Info.dart';
+import 'package:new_app/old_screens2/group%20My%20Profile/setting%20screen/setting%20page/wedgets/stats.dart';
 import 'package:new_app/screen/setting_page/commons/personal_Info.dart';
 import 'package:new_app/screen/setting_page/commons/stats.dart';
 

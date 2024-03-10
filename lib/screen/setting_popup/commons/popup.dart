@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:new_app/const/font_constants.dart';
+import 'package:new_app/const/route_const.dart';
+import 'package:new_app/screen/common_widgets/button_1.dart';
+import 'package:new_app/screen/common_widgets/button_2.dart';
+import 'package:new_app/screen/common_widgets/button_2_white.dart';
+import 'package:new_app/screen/common_widgets/cancel_button.dart';
+import 'package:new_app/screen/common_widgets/logout_button.dart';
 
 class PopupSection extends StatelessWidget {
   const PopupSection({super.key});
@@ -70,14 +78,14 @@ class PopupSection extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
-                    height: 87,
-                    child: Row(
+                SizedBox(height: 56, child: _popupButtonSection()
+
+                    /* Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Container(
-                          width: 150,
+                        /*Container(
+                          width: size.width * 0.30,
                           height: 52,
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -108,9 +116,11 @@ class PopupSection extends StatelessWidget {
                                   )),
                             ],
                           ),
-                        ),
-                        Container(
-                          width: 150,
+                        ),*/
+
+                        
+                        /* Container(
+                          width: size.width * 0.30,
                           height: 52,
                           decoration: BoxDecoration(
                             color: const Color(0xFF6A5AE0),
@@ -137,12 +147,34 @@ class PopupSection extends StatelessWidget {
                                   )),
                             ],
                           ),
-                        ),
+                        ),*/
                       ],
-                    )),
+                    )*/
+                    ),
+                SizedBox(height: size.height * 0.001)
               ],
             ),
           ),
         ));
   }
+}
+
+Widget _popupButtonSection() {
+  return Row(
+    children: [
+      Expanded(
+        child: CancelButton(
+          onTap: () {
+            Get.toNamed(Routes.setting);
+          },
+        ),
+      ),
+      const SizedBox(width: 20),
+      Expanded(
+          child: LogoutButton(
+        onTap: () {},
+        activate: false,
+      ))
+    ],
+  );
 }

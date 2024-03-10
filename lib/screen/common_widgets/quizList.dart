@@ -83,7 +83,7 @@ class QuizListSection extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: size.width * 0.55,
+                      width: size.width * 0.57,
                       decoration: BoxDecoration(
                         borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(12),
@@ -259,7 +259,7 @@ class QuizListSection extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: size.width * 0.55,
+                      width: size.width * 0.57,
                       decoration: BoxDecoration(
                         borderRadius: const BorderRadius.only(
                           bottomRight: Radius.circular(12),

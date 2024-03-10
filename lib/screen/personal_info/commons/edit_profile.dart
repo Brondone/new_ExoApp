@@ -8,11 +8,12 @@ class editProfileSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Stack(
       children: [
         Container(
-          width: 120,
-          height: 120,
+          width: size.height * 0.15,
+          height: size.height * 0.15,
           clipBehavior: Clip.antiAlias,
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
@@ -23,18 +24,18 @@ class editProfileSection extends StatelessWidget {
           ),
         ),
         Align(
-          alignment: AlignmentDirectional(1, 1),
+          alignment: const AlignmentDirectional(1, 1),
           child: Container(
-            width: 36,
-            height: 36,
-            decoration: BoxDecoration(
+            width: size.height * 0.05,
+            height: size.height * 0.05,
+            decoration: const BoxDecoration(
               color: Color(0xFF6A5AE0),
               shape: BoxShape.circle,
             ),
             child: Icon(
               Icons.create_outlined,
               color: Colors.white,
-              size: 24,
+              size: size.height * 0.03,
             ),
           ),
         ),

@@ -1,10 +1,10 @@
 abstract class Routes {
   static const splash = '/splashView';
   static const onboarding = '/onboarding';
-  static const bottomNavbar= '/bottomNavBar';
-  static const login= '/login';
-  static const signUp= '/signUp';
-  static const createNewPass= '/createNewPass';
+  static const bottomNavbar = '/bottomNavBar';
+  static const login = '/login';
+  static const signUp = '/signUp';
+  static const createNewPass = '/createNewPass';
   static const forgotPass = '/forgotPass';
   static const otpScreen = '/otpScreen';
   static const studentProfilePic = '/studentProfilePic';
@@ -28,6 +28,10 @@ abstract class Routes {
   static const homeScreen = '/homeScreen';
   static const quizAddMedia = '/quizAddMedia';
   static const addQuestion = '/addQuestion';
+  static const logout = '/logout';
+  static const setting = '/setting';
+  static const stats = '/stats';
+  static const personalInfo = '/personalInfo';
 
   //PlayQuiz
   static const waitingScreen = '/waitingScreen';
@@ -36,8 +40,4 @@ abstract class Routes {
   static const joinGame = '/joinGame';
   static const createQuizPreview = '/createQuizPreview';
   static const createQuizSetting = '/createQuizSetting';
-
-
-
-
 }
